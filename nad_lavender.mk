@@ -15,6 +15,9 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 # Inherit some common Corvus stuff.
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
+# lawnchair
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Charging Animation
 USE_PIXEL_CHARGING := true
 
